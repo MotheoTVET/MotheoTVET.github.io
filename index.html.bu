@@ -649,7 +649,7 @@
     <body
         itemtype="https://schema.org/WebPage"
         itemscope="itemscope"
-        class="font-sans antialiased text-gray-900 bg-white min-h-screen"
+        class="home page-template-default page page-id-13 wp-custom-logo ast-desktop ast-page-builder-template ast-no-sidebar astra-4.7.0 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-465 elementor-page elementor-page-13"
         style=""
     >
         <!-- BEGIN WAYBACK TOOLBAR INSERT -->
