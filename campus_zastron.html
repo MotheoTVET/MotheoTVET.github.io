@@ -1,0 +1,160 @@
+<!doctype html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="js/athena.js" type="text/javascript"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+            .fade-in.show { opacity: 1; transform: translateY(0); }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Zastron Campus – Motheo TVET College</title>
+        <link rel="stylesheet" href="css/main.min.css" media="all" />
+        <link rel="stylesheet" href="css/default.css" media="all" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/default.js"></script>
+        <link rel="icon" href="imgs/logo-to-use.png" sizes="32x32" />
+        <link rel="icon" href="imgs/logo-to-use.png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="imgs/logo-to-use.png" />
+    </head>
+    <body class="bg-white text-gray-900 font-sans">
+
+        <header class="bg-white shadow fixed w-full z-50">
+            <div class="max-w-7xl mx-auto px-4 py-15 flex justify-between items-center h-22 gap-10">
+                <span class="h-15"><a href="index.html" rel="home"><img width="300" height="72" src="imgs/motheo-logo.png" alt="Motheo TVET College"></a></span>
+                <nav class="hidden md:flex font-medium justify-end">
+                    <a href="index.html" class="block px-4 py-2">Home</a>
+                    <div class="relative group">
+                        <button class="py-2 px-2 hover:text-blue-600">About ▾</button>
+                        <div class="absolute hidden group-hover:block bg-white shadow rounded min-w-[160px] top-full left-0 py-1">
+                            <a href="profile.html" class="block px-2 py-2">Profile</a>
+                            <a href="broad_management.html" class="block px-2 py-2">Broad Management</a>
+                            <a href="activities.html" class="block px-2 py-2">Activities</a>
+                            <a href="gallery.html" class="block px-2 py-2">Gallery</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="py-2 px-2 hover:text-blue-600">Registration ▾</button>
+                        <div class="absolute hidden group-hover:block bg-white shadow rounded min-w-[160px] top-full left-0 py-1">
+                            <a href="prospectus.html" class="block px-2 py-2">Prospectus</a>
+                        </div>
+                    </div>
+                    <a href="campuses.html" class="block px-2 py-2">Campuses</a>
+                    <a href="academic_support.html" class="block px-2 py-2">Academic Support</a>
+                    <a href="partnerships.html" class="block px-2 py-2">Partnerships</a>
+                    <a href="vacancies.html" class="block px-2 py-2">Vacancies</a>
+                    <a href="contact.html" class="block px-2 py-2">Contact</a>
+                </nav>
+                <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+                <div id="mobileMenu" class="hidden bg-white border-t p-4 space-y-3 md:hidden">
+                    <a href="index.html" class="w-full">Home</a><br/>
+                    <div>
+                        <button onclick="toggleDropdown()" class="w-full text-left">About ▾</button>
+                        <div id="mobileDropdown" class="hidden ml-4 mt-2">
+                            <a href="profile.html" class="w-full">Profile</a><br/>
+                            <a href="broad_management.html" class="w-full">Broad Management</a>
+                            <a href="activities.html" class="w-full">Activities</a>
+                            <a href="gallery.html" class="w-full">Gallery</a><br/>
+                        </div>
+                    </div>
+                    <div>
+                        <button onclick="toggleDropdown2()" class="w-full text-left">Registration ▾</button>
+                        <div id="mobileDropdown2" class="hidden ml-4 mt-2">
+                            <a href="prospectus.html" class="w-full">Prospectus</a>
+                        </div>
+                    </div>
+                    <a href="campuses.html" class="w-full">Campuses</a><br/>
+                    <a href="academic_support.html" class="w-full">Academic Support</a><br/>
+                    <a href="vacancies.html" class="w-full">Vacancies</a><br/>
+                    <a href="contact.html" class="w-full">Contact</a>
+                </div>
+            </div>
+        </header>
+        <div class="h-16"></div>
+
+        <!-- Hero Image -->
+        <div class="w-full h-64 md:h-96 overflow-hidden">
+            <img src="imgs/IMG_0593-1024x684.jpg" alt="Zastron Campus" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Main Content -->
+        <section class="py-12 bg-gray-100">
+            <div class="max-w-4xl mx-auto px-4">
+
+                <a href="campuses.html" class="inline-flex items-center text-blue-600 hover:underline mb-6 text-sm">
+                    ← Back to Campuses
+                </a>
+
+                <h1 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-2">Zastron Campus</h1>
+                <p class="text-gray-500 mb-8">Motheo TVET College</p>
+
+                <div class="grid md:grid-cols-2 gap-6">
+
+                    <!-- Contact Info -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6 space-y-4">
+                        <h2 class="text-lg font-semibold text-gray-800">Contact Information</h2>
+                        <div class="text-sm text-gray-600 space-y-2">
+                            <p>📞 <strong>Phone:</strong> 051 813 9012</p>
+                            <p>✉️ <strong>Email:</strong> marketing@motheotvet.edu.za</p>
+                            <p>🕐 <strong>Hours:</strong> 8:00 a.m. – 4:00 p.m.</p>
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6 space-y-4">
+                        <h2 class="text-lg font-semibold text-gray-800">Location</h2>
+                        <div class="text-sm text-gray-600">
+                            <p>Zastron,</p>
+                            <p>Free State</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="bg-gray-100 text-gray-600 pt-12">
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+                <div>
+                    <p class="text-lg font-semibold mb-4">Motheo TVET College</p>
+                    <p class="text-sm leading-relaxed">c/o St Georges and Aliwal streets,<br>Private Bag X20509,<br>Bloemfontein,<br>9300</p>
+                </div>
+                <div>
+                    <p class="text-lg font-semibold mb-4">Central Office</p>
+                    <p class="text-sm">+27 51 406 9300<br>8:00 a.m. – 4:00 p.m.</p>
+                </div>
+                <div>
+                    <p class="text-lg font-semibold mb-4">Marketing</p>
+                    <p class="text-sm">marketing@motheotvet.edu.za</p>
+                </div>
+            </div>
+            <div class="flex max-w-6xl mx-auto px-4 mt-12 gap-8 justify-between">
+                <div class="flex justify-center md:justify-start">
+                    <img src="imgs/motheo-logo.png" alt="Motheo Logo" class="h-12">
+                </div>
+                <div class="flex justify-center md:justify-end space-x-4">
+                    <a href="javascript:;" class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none"><path d="M40.7568 32.1716L59.3704 11H54.9596L38.7974 29.383L25.8887 11H11L30.5205 38.7983L11 61H15.4111L32.4788 41.5869L46.1113 61H61L40.7557 32.1716H40.7568ZM34.7152 39.0433L32.7374 36.2752L17.0005 14.2492H23.7756L36.4755 32.0249L38.4533 34.7929L54.9617 57.8986H48.1865L34.7152 39.0443V39.0433Z" fill="#111827" /></svg>
+                    </a>
+                    <a href="javascript:;" class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72" fill="none"><path d="M46.4233 38.6403L47.7279 30.3588H39.6917V24.9759C39.6917 22.7114 40.8137 20.4987 44.4013 20.4987H48.1063V13.4465C45.9486 13.1028 43.7685 12.9168 41.5834 12.8901C34.9692 12.8901 30.651 16.8626 30.651 24.0442V30.3588H23.3193V38.6403H30.651V58.671H39.6917V38.6403H46.4233Z" fill="#111827" /></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10">
+                <div class="max-w-6xl mx-auto px-4 py-4 text-center text-sm text-gray-400">Copyright © 2026</div>
+            </div>
+        </footer>
+
+        <script>
+        document.getElementById("menuBtn").onclick = () => {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        };
+        function toggleDropdown() { document.getElementById("mobileDropdown").classList.toggle("hidden"); }
+        function toggleDropdown2() { document.getElementById("mobileDropdown2").classList.toggle("hidden"); }
+        </script>
+    <script src="js/nav-highlight.js"></script>
+</body>
+</html>
