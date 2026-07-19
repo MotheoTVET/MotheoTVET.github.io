@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Vacancy opportunity</title>
+  <rect width="96" height="96" rx="24" fill="#ecfdf5"/>
+  <path d="M36 32v-6c0-4 3-7 7-7h10c4 0 7 3 7 7v6" fill="none" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
+  <rect x="20" y="32" width="56" height="43" rx="7" fill="#fff" stroke="#059669" stroke-width="4"/>
+  <path d="M20 49c8 5 17 8 28 8s20-3 28-8" fill="none" stroke="#059669" stroke-width="4"/>
+  <rect x="43" y="52" width="10" height="10" rx="2" fill="#d1fae5" stroke="#059669" stroke-width="3"/>
+</svg>

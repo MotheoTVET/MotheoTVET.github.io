@@ -176,6 +176,10 @@
                                 class="block px-2 py-2"
                             >Profile</a>
                             <a
+                                href="campuses.html"
+                                class="block px-2 py-2"
+                            >Campuses</a>
+                            <a
                                 href="broad_management.html"
                                 class="block px-2 py-2"
                             >Broad Management</a>
@@ -200,10 +204,6 @@
                             >Prospectus</a>
                         </div>
                     </div>
-                    <a
-                            href="campuses.html"
-                            class="block px-2 py-2"
-                        >Campuses</a>
                         <a
                             href="academic_support.html"
                             class="block px-2 py-2"
@@ -218,42 +218,47 @@
                             class="block px-2 py-2"
                             >Vacancies</a>
                         <a
+                            href="tenders.html"
+                            class="block px-2 py-2"
+                            >Tenders</a>
+                        <a
                             href="contact.html"
                             class="block px-2 py-2"
                             >Contact</a>
                 </nav>
                 <!-- Mobile Button -->
-                <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+                <button id="menuBtn" type="button" class="md:hidden text-2xl w-11 h-11 flex items-center justify-center rounded-lg hover:bg-gray-100" aria-label="Open navigation menu" aria-expanded="false">☰</button>
                 <!-- Main Header Bar Wrap -->
                 <div
                     id="mobileMenu"
-                    class="hidden bg-white border-t p-4 space-y-3 md:hidden"
+                    class="absolute top-full left-0 w-full hidden bg-white border-t p-3 md:hidden shadow-lg max-h-[calc(100vh-5.5rem)] overflow-y-auto"
                 >
-                    <a href="https://www.motheotvet.edu.za" class="w-full">Home</a><br/>
+                    <a href="https://www.motheotvet.edu.za" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Home</a>
 
                     <div>
-                        <button onclick="toggleDropdown()" class="w-full text-left">
+                        <button onclick="toggleDropdown()" class="w-full text-left block rounded-lg px-4 py-3 font-medium hover:bg-gray-100">
                             About ▾
                         </button>
                         <div id="mobileDropdown" class="hidden ml-4 mt-2">
-                            <a href="profile.html" class="w-full">Profile</a><br/>
-                            <a href="broad_management.html" class="w-full">Broad Management</a>
-                            <a href="activities.html" class="w-full">Activities</a>
-                            <a href="gallery.html" class="w-full">Gallery</a><br/>
+                            <a href="profile.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Profile</a>
+                            <a href="campuses.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Campuses</a>
+                            <a href="broad_management.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Broad Management</a>
+                            <a href="activities.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Activities</a>
+                            <a href="gallery.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Gallery</a>
                         </div>
                     </div>
                     <div>
-                        <button onclick="toggleDropdown2()" class="w-full text-left">
+                        <button onclick="toggleDropdown2()" class="w-full text-left block rounded-lg px-4 py-3 font-medium hover:bg-gray-100">
                             Registration ▾
                         </button>
                         <div id="mobileDropdown2" class="hidden ml-4 mt-2">
-                            <a href="prospectus.html" class="w-full">Prospectus</a>
+                            <a href="prospectus.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Prospectus</a>
                         </div>
                     </div>
-                    <a href="campuses.html" class="w-full">Campuses</a><br/>
-                    <a href="academic_support.html" class="w-full">Academic Support</a><br/>
-                    <a href="vacancies.html" class="w-full">Vacancies</a><br/>
-                    <a href="contact.html" class="w-full">Contact</a>
+                    <a href="academic_support.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Academic Support</a>
+                    <a href="vacancies.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Vacancies</a>
+                    <a href="tenders.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Tenders</a>
+                    <a href="contact.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Contact</a>
                 </div>
             </header>
             <div class="h-16"></div>
@@ -269,22 +274,19 @@
 
                             <!-- Slider Wrapper (Slides container) -->
                             <!-- Responsive min-heights: tight and perfectly proportioned on mobile to avoid layout gaps -->
-                            <div class="relative min-h-[560px] sm:min-h-[520px] lg:min-h-[620px] w-full flex items-center pb-20 pt-8 sm:pt-12 lg:py-12">
+                           <!--
+                           <div class="relative min-h-[560px] sm:min-h-[520px] lg:min-h-[620px] w-full flex items-center pb-20 pt-8 sm:pt-12 lg:py-12">
 
-                                <!-- ========================================== -->
-                                <!-- SLIDE 1: 2ND SEMESTER ONLINE APPLICATIONS -->
-                                <!-- ========================================== -->
                                 <div id="motheo-slide-1" class="motheo-slide opacity-100 transition-opacity duration-700 ease-in-out absolute inset-0 w-full h-full flex items-center z-10">
                                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
 
-                                        <!-- Left Column: Key Info directly from the poster -->
                                         <div class="lg:col-span-7 space-y-4 sm:space-y-6">
                                             <div class="flex flex-wrap gap-2">
                                                 <span class="bg-[#f3a214] text-[#00204a] font-black text-[10px] sm:text-xs tracking-wider uppercase px-2.5 py-1 sm:py-1.5 rounded-full shadow-md animate-pulse">
                                                     🚨 Applications Open
                                                 </span>
                                                 <span class="bg-white/10 text-white border border-white/25 font-bold text-[10px] sm:text-xs px-2.5 py-1 sm:py-1.5 rounded-full flex items-center gap-1.5">
-                                                    <!-- Calendar SVG Icon -->
+
                                                     <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#f3a214]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                                                     18 May 2026 – 29 May 2026
                                                 </span>
@@ -300,14 +302,11 @@
                                                 </p>
                                             </div>
 
-                                            <!-- Required Documents checklist translated from the graphic -->
                                             <div class="bg-slate-900/40 border border-white/10 rounded-xl p-3.5 sm:p-5 max-w-2xl">
                                                 <h3 class="text-xs font-bold text-[#f3a214] uppercase tracking-wider mb-2.5 flex items-center gap-2">
-                                                    <!-- Checklist Clipboards SVG Icon -->
                                                     <svg class="w-4 h-4 sm:w-4.5 sm:h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                                                     What Documents Do I Need?
                                                 </h3>
-                                                <!-- Smart grid: 1 column on mobile, 2 columns on tablet/desktop -->
                                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] sm:text-xs">
                                                     <div class="flex items-center gap-2 text-slate-200">
                                                         <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
@@ -328,10 +327,8 @@
                                                 </div>
                                             </div>
 
-                                            <!-- Call To Action Buttons - stacked on mobile, row on tablet/desktop -->
                                             <div class="flex flex-col sm:flex-row gap-3 pt-2">
                                                 <a href="https://www.motheotvet.edu.za" target="_blank" rel="noopener" class="bg-[#f3a214] text-[#00204a] font-extrabold hover:bg-white px-5 py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 text-xs uppercase tracking-wider">
-                                                    <!-- Link External SVG Icon -->
                                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                                                     <span>Apply Online Now</span>
                                                 </a>
@@ -341,9 +338,7 @@
                                             </div>
                                         </div>
 
-                                        <!-- Right Column: Visual Mockup - Hidden on mobile/tablets for pristine layout & performance -->
                                         <div class="lg:col-span-5 hidden lg:flex justify-center relative mt-8 lg:mt-0">
-                                            <!-- Tech UI Mockup mirroring original poster visual layout -->
                                             <div class="relative w-full max-w-[340px] aspect-[3/4] bg-[#0c192c] rounded-2xl shadow-2xl border-4 border-slate-800 overflow-hidden transform hover:scale-[1.02] transition duration-300">
                                                 <div class="bg-[#f3a214] h-2.5 w-full"></div>
                                                 <div class="p-5 space-y-4">
@@ -362,7 +357,6 @@
                                                         </div>
                                                     </div>
 
-                                                    <!-- Steps layout -->
                                                     <div class="space-y-3">
                                                         <div class="bg-slate-900/80 p-3 rounded-lg border border-slate-800">
                                                             <div class="text-[9px] text-slate-400 uppercase font-bold tracking-wider">Available Courses</div>
@@ -384,10 +378,8 @@
                                                 </div>
                                             </div>
 
-                                            <!-- Campus Badge Overlap -->
                                             <div class="absolute -bottom-5 -left-4 bg-[#00204a] text-white p-3.5 rounded-xl border border-white/10 shadow-2xl flex items-center space-x-3 max-w-[210px]">
                                                 <div class="w-9 h-9 rounded-full bg-amber-400 flex items-center justify-center shrink-0">
-                                                    <!-- Buildings SVG Icon -->
                                                     <svg class="w-5 h-5 text-[#00204a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                                                 </div>
                                                 <div class="leading-tight">
@@ -399,7 +391,7 @@
 
                                     </div>
                                 </div>
-
+-->
                                 <!-- ========================================== -->
                                 <!-- SLIDE 2: THE GATEWAY TO EMPLOYABILITY     -->
                                 <!-- ========================================== -->
@@ -810,6 +802,7 @@
         </button>
         <div class="mt-2 ml-4 space-y-2 text-sm text-gray-600">
           <a href="profile.html" class="block hover:text-blue-600">Profile</a>
+          <a href="campuses.html" class="block hover:text-blue-600">Campuses</a>
           <a href="broad_management.html" class="block hover:text-blue-600">Broad Management</a>
           <a href="activities.html" class="block hover:text-blue-600">Activities</a>
           <a href="gallery.html" class="block hover:text-blue-600">Gallery</a>
@@ -827,10 +820,6 @@
         </div>
       </div>
 
-      <a href="campuses.html" class="block text-gray-800 font-medium hover:text-blue-600">
-        Campuses
-      </a>
-
       <a href="academic_support.html" class="block text-gray-800 font-medium hover:text-blue-600">
         Academic Support
       </a>
@@ -841,6 +830,10 @@
 
       <a href="vacancies.html" class="block text-gray-800 font-medium hover:text-blue-600">
         Vacancies
+      </a>
+
+      <a href="tenders.html" class="block text-gray-800 font-medium hover:text-blue-600">
+        Tenders
       </a>
 
       <a href="contact.html" class="block text-gray-800 font-medium hover:text-blue-600">
@@ -955,10 +948,12 @@
 
 <script>
 // MOBILE MENU
-document.getElementById("menuBtn").onclick = () => {
-    document
-        .getElementById("mobileMenu")
-        .classList.toggle("hidden");
+document.getElementById("menuBtn").onclick = function () {
+    const menu = document.getElementById("mobileMenu");
+    const isOpen = !menu.classList.toggle("hidden");
+    this.textContent = isOpen ? "✕" : "☰";
+    this.setAttribute("aria-expanded", String(isOpen));
+    this.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
 };
 
 // MOBILE DROPDOWN

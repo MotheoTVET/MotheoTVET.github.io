@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Opportunity document</title>
+  <rect width="96" height="96" rx="24" fill="#eff6ff"/>
+  <path d="M30 18h25l15 15v45H30z" fill="#fff" stroke="#2563eb" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M55 18v16h15" fill="#dbeafe" stroke="#2563eb" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M40 47h20M40 57h20M40 67h13" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -29,6 +29,7 @@
                         <button class="py-2 px-2 hover:text-blue-600">About ▾</button>
                         <div class="absolute hidden group-hover:block bg-white shadow rounded min-w-[160px] top-full left-0 py-1">
                             <a href="profile.html" class="block px-2 py-2">Profile</a>
+                            <a href="campuses.html" class="block px-2 py-2">Campuses</a>
                             <a href="broad_management.html" class="block px-2 py-2">Broad Management</a>
                             <a href="activities.html" class="block px-2 py-2">Activities</a>
                             <a href="gallery.html" class="block px-2 py-2">Gallery</a>
@@ -40,34 +41,35 @@
                             <a href="prospectus.html" class="block px-2 py-2">Prospectus</a>
                         </div>
                     </div>
-                    <a href="campuses.html" class="block px-2 py-2">Campuses</a>
                     <a href="academic_support.html" class="block px-2 py-2">Academic Support</a>
                     <a href="partnerships.html" class="block px-2 py-2">Partnerships</a>
                     <a href="vacancies.html" class="block px-2 py-2">Vacancies</a>
+                    <a href="tenders.html" class="block px-2 py-2">Tenders</a>
                     <a href="contact.html" class="block px-2 py-2">Contact</a>
                 </nav>
-                <button id="menuBtn" class="md:hidden text-2xl">☰</button>
-                <div id="mobileMenu" class="hidden bg-white border-t p-4 space-y-3 md:hidden">
-                    <a href="index.html" class="w-full">Home</a><br/>
+                <button id="menuBtn" type="button" class="md:hidden text-2xl w-11 h-11 flex items-center justify-center rounded-lg hover:bg-gray-100" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+                <div id="mobileMenu" class="absolute top-full left-0 w-full hidden bg-white border-t p-3 md:hidden shadow-lg max-h-[calc(100vh-5.5rem)] overflow-y-auto">
+                    <a href="index.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Home</a>
                     <div>
-                        <button onclick="toggleDropdown()" class="w-full text-left">About ▾</button>
+                        <button onclick="toggleDropdown()" class="w-full text-left block rounded-lg px-4 py-3 font-medium hover:bg-gray-100">About ▾</button>
                         <div id="mobileDropdown" class="hidden ml-4 mt-2">
-                            <a href="profile.html" class="w-full">Profile</a><br/>
-                            <a href="broad_management.html" class="w-full">Broad Management</a>
-                            <a href="activities.html" class="w-full">Activities</a>
-                            <a href="gallery.html" class="w-full">Gallery</a><br/>
+                            <a href="profile.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Profile</a>
+                            <a href="campuses.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Campuses</a>
+                            <a href="broad_management.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Broad Management</a>
+                            <a href="activities.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Activities</a>
+                            <a href="gallery.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Gallery</a>
                         </div>
                     </div>
                     <div>
-                        <button onclick="toggleDropdown2()" class="w-full text-left">Registration ▾</button>
+                        <button onclick="toggleDropdown2()" class="w-full text-left block rounded-lg px-4 py-3 font-medium hover:bg-gray-100">Registration ▾</button>
                         <div id="mobileDropdown2" class="hidden ml-4 mt-2">
-                            <a href="prospectus.html" class="w-full">Prospectus</a>
+                            <a href="prospectus.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Prospectus</a>
                         </div>
                     </div>
-                    <a href="campuses.html" class="w-full">Campuses</a><br/>
-                    <a href="academic_support.html" class="w-full">Academic Support</a><br/>
-                    <a href="vacancies.html" class="w-full">Vacancies</a><br/>
-                    <a href="contact.html" class="w-full">Contact</a>
+                    <a href="academic_support.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Academic Support</a>
+                    <a href="vacancies.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Vacancies</a>
+                    <a href="tenders.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Tenders</a>
+                    <a href="contact.html" class="block rounded-lg px-4 py-3 hover:bg-gray-100">Contact</a>
                 </div>
             </div>
         </header>
@@ -149,8 +151,12 @@
         </footer>
 
         <script>
-        document.getElementById("menuBtn").onclick = () => {
-            document.getElementById("mobileMenu").classList.toggle("hidden");
+        document.getElementById("menuBtn").onclick = function () {
+            const menu = document.getElementById("mobileMenu");
+            const isOpen = !menu.classList.toggle("hidden");
+            this.textContent = isOpen ? "✕" : "☰";
+            this.setAttribute("aria-expanded", String(isOpen));
+            this.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
         };
         function toggleDropdown() { document.getElementById("mobileDropdown").classList.toggle("hidden"); }
         function toggleDropdown2() { document.getElementById("mobileDropdown2").classList.toggle("hidden"); }
